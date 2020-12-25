@@ -12,3 +12,34 @@
   margin-top: -5px;
   padding-bottom: 10px;
 }
+
+/***** CustomerAdd CSS *****/
+.customerForm {
+  padding: 0 15px;
+}
+.customerForm p {
+  margin-bottom: -10px;
+}
+.customerForm div > p {
+  display: flex;
+  margin-right: 35px;
+}
+.customerForm div > p > label {
+  width: 109px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.customerForm p > label { 
+  font-size: 15px;
+  font-weight: 600;
+}
+.CtmSubmitBtn {
+  margin-top: 25px;
+}
+.customerForm div input {
+  border: 1px solid #ddd;
+  width: 175px;
+}
+.MuiTableCell-body > img {
+  height: 52px;
+}

@@ -1,4 +1,9 @@
+# .gitignore 파일은 GitHub에 푸시되지 않도록 파일 및 폴더를 등록할 수 있다.
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+#file-upload
+/upload
 
 #database
 /database.json
