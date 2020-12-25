@@ -112,7 +112,7 @@ class CustomerAdd extends React.Component {
             />
           </p>
         </div>
-        <button className="CtmSubmitBtn" type="submit">추가하기</button>
+        <button className="CtmSubmitBtn" type="submit">추가하기</button>        
       </form>
     );
   }
