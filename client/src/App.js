@@ -25,8 +25,22 @@ import CustomerAdd from './components/CustomerAdd';
 
 class App extends Component {   
 
-  state = {
-    customers: ""
+  constructor(props) {
+    super(props);
+    this.state = {
+      customers: '',
+      completed: 0
+    }
+  }
+
+  stateRefresh = () => {
+    this.setState({
+      customers: '',
+      completed: 0
+    })
+    this.callApi()
+      .then(res => this.setState({customers: res}))
+      .catch(err => console.log(err));
   }
 
   componentDidMount() {
@@ -44,8 +58,8 @@ class App extends Component {
   render() {
     const { classes } = this.props;
     return (         
-        <div>
-          <CustomerAdd />
+        <div>          
+          <CustomerAdd stateRefresh={this.stateRefresh}/> {/*함수값을 props값으로 전달 */}
           <Paper className={classes.root}>
             <Table className={classes.table}>
               <TableHead>
@@ -76,7 +90,7 @@ class App extends Component {
                 }
               </TableBody>
             </Table>
-          </Paper>          
+          </Paper>
         </div>
     );
   }

@@ -20,6 +20,7 @@ class CustomerAdd extends React.Component {
     this.addCustomer()
       .then((response) => {
         console.log(response.data);
+        this.props.stateRefresh(); // props값으로 전달받은 값을 수행
       })
     this.setState({
       file: null,
@@ -28,8 +29,7 @@ class CustomerAdd extends React.Component {
       gender:'',
       job:'',
       fileName:'',
-    })
-    window.location.reload();
+    })    
   }
 
   handleFileChange = (e) => {
