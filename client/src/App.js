@@ -20,9 +20,7 @@ import { withStyles } from '@material-ui/core/styles';
     table: {
       minWidth: 677
     }
-  })
-
-  
+  })  
 
 class App extends Component {   
 
