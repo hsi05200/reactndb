@@ -43,3 +43,12 @@
 .MuiTableCell-body > img {
   height: 52px;
 }
+
+/***** 고객추가 모달창 *****/
+.MuiFormControl-root {
+  width: 100%;
+}
+.MuiDialogActions-root {
+  margin: 0 auto 17px;
+  width: 80%;
+}
