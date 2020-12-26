@@ -98,8 +98,8 @@ class CustomerAdd extends React.Component {
     const { classes } = this.props;
     return (
       <div>
-        <div style={{display:'flex', justifyContent:'space-between', marginBottom:-25, borderBottom:'3px solid #ddd'}}>
-          <h1 style={{marginLeft:15}}>고객관리</h1>
+        <div style={{display:'flex', justifyContent:'space-between', marginBottom:0, borderBottom:'1px solid #ddd'}}>
+          <h1 style={{marginLeft:15}}>고객리스트</h1>
           <Button variant="contained"
                   color="primary"
                   onClick={() => this.handleClickOpen()}
