@@ -110,6 +110,17 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
+  stateRefresh2 = () => {
+    this.setState({
+      customers: '',
+      completed: 0,
+      searchKeyword:''
+    })
+    this.callApi()
+      .then(res => this.setState({customers: res}))
+      .catch(err => console.log(err));
+  }
+
   componentDidMount() {
     this.callApi()
       .then(res => this.setState({customers: res}))
@@ -152,7 +163,8 @@ class App extends Component {
       "생년월일",
       "성별",
       "직업",
-      "게시글 관리"
+      "회원관리",
+      "정보수정"
     ];
 
     return (         

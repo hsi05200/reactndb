@@ -28,13 +28,14 @@ class CustomerDelete extends React.Component {
       });    
   }
 
-  deletedCustomer(id) {    
+  deletedCustomer = (id) => {    
     const url = '/api/customers/' + id;
     fetch(url, {
       method: 'DELETE'
     });
     this.props.stateRefresh();
   }
+  
   render() {
 
     return (
